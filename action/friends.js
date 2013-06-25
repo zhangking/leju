@@ -20,7 +20,7 @@ var getfriend = function(response, request, arguments)
 var addfriend =  function(response, request, arguments)
 {
     var callback= function(response){
-        response.write("1");
+        response.write("true");
         response.end();
     };
       dbmanage.insert("friends",arguments,callback,response)

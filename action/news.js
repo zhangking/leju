@@ -21,7 +21,7 @@ var tool     = require("../tool");
  {
      var callback = function (response)
      {
-         response.write("1");
+         response.write("true");
          response.end();
      };
       dbmanage.insert("news",arguments,callback,response);
@@ -43,7 +43,7 @@ var tool     = require("../tool");
       args.id=arguments.id;
       var args1 = arguments;
       var callback1=function(response){
-          response.write("1");
+          response.write("true");
           response.end();
       }
       var callback = function(results,response)
